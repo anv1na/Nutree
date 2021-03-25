@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{018030BB-CB75-483A-81E5-74BE20FBBC79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppNutricao</RootNamespace>
+    <AssemblyName>AppNutricao</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajuda_TecOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajuda_TecOn.Designer.cs">
+      <DependentUpon>Ajuda_TecOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar_Cadastro.Designer.cs">
+      <DependentUpon>Alterar_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banco.cs" />
+    <Compile Include="Cadastro_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro_Paciente.Designer.cs">
+      <DependentUpon>Cadastro_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora_IMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora_IMC.Designer.cs">
+      <DependentUpon>Calculadora_IMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dietas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dietas.Designer.cs">
+      <DependentUpon>Dietas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMC.cs" />
+    <Compile Include="MetabolismoB.cs" />
+    <Compile Include="Metabolismo_Basal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metabolismo_Basal.Designer.cs">
+      <DependentUpon>Metabolismo_Basal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutree_Quem_Somos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutree_Quem_Somos.Designer.cs">
+      <DependentUpon>Nutree_Quem_Somos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacient.cs" />
+    <Compile Include="PesoI.cs" />
+    <Compile Include="Peso_Ideal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peso_Ideal.Designer.cs">
+      <DependentUpon>Peso_Ideal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Página Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página Inicial.Designer.cs">
+      <DependentUpon>Página Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajuda_TecOn.resx">
+      <DependentUpon>Ajuda_TecOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar_Cadastro.resx">
+      <DependentUpon>Alterar_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro_Paciente.resx">
+      <DependentUpon>Cadastro_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora_IMC.resx">
+      <DependentUpon>Calculadora_IMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dietas.resx">
+      <DependentUpon>Dietas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metabolismo_Basal.resx">
+      <DependentUpon>Metabolismo_Basal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutree_Quem_Somos.resx">
+      <DependentUpon>Nutree_Quem_Somos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peso_Ideal.resx">
+      <DependentUpon>Peso_Ideal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Página Inicial.resx">
+      <DependentUpon>Página Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
